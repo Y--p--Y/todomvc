@@ -1,2 +1,5 @@
 # todomvc
-A Todo list webapp based on various frameworks
+Todo list web applications based on various frameworks.
+
+Resource:
+http://todomvc.com

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>todomvc - vanilla-es6</title>
+    <link rel="stylesheet" href="node_modules/todomvc-common/base.css">
+    <link rel="stylesheet" href="node_modules/todomvc-app-css/index.css">
+  </head>
+  <body>
+    <section class="todoapp">
+      <header>
+        <h1>todos</h1>
+        <input type="text" class="new-todo" placeholder="What needs to be done?" autofocus/>
+      </header>
+      <section class="main">
+        <input type="checkbox" class="toggle-all"/>
+        <label for="toggle-all">Mark all as complete</label>
+        <ul class="todo-list">
+        </ul>
+        <footer class="footer">
+					<span class="todo-count"></span>
+					<ul class="filters">
+            <li>
+  						<a href="#/" class="selected">All</a>
+            </li>
+            <li>
+						<a href="#/active">Active</a>
+            </li>
+            <li>
+						<a href="#/completed">Completed</a>
+            </li>
+					</ul>
+					<button class="clear-completed">Clear completed</button>
+				</footer>
+      </section>
+    </section>
+    <script src="dist/bundle.js"></script>
+    <script src="node_modules/todomvc-common/base.js"></script>
+  </body>
+</html>
