@@ -11,7 +11,7 @@
       compiler = $compile;
     }));
 
-    it('should focus on truthy expression', inject(function ($timeout) {
+    it('should focus on truthy expression', inject(function (_$timeout_) {
       var el = angular.element('<input todo-focus = "focus" />');
       spyOn(el[0], 'focus');
 
@@ -22,7 +22,7 @@
 				scope.focus = true;
 			});
 
-      $timeout.flush();
+      _$timeout_.flush();
       expect(el[0].focus).toHaveBeenCalled();
 
       el.remove();
